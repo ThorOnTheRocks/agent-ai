@@ -15,5 +15,5 @@ const response = await runAgent({
   tools: tools,
 });
 
-console.log(response);
+console.log(response[0].content);
  
