@@ -5,7 +5,7 @@ import { Results } from '../../../types'
 import './App.css'
 
 const App = () => {
-  const results = resultsData as Results
+  const results = resultsData as unknown as Results
   const [selectedExperiment, setSelectedExperiment] = useState(
     results.experiments[0].name
   )
