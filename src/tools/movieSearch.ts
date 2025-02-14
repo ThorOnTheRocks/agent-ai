@@ -19,7 +19,6 @@ export const movieSearch: ToolFn<Args> = async ({userMessage, toolArgs}) => {
   try {
     results = await queryMovies({query: toolArgs.query})
   } catch (error) {
-    console.error(error)
     return 'Error: Could not query the db to get movies.'
   }
 
